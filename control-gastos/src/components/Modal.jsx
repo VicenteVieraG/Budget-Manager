@@ -83,7 +83,7 @@ const Modal = ({
 			</div>
 			
 			<div className="campo">
-				<label htmlFor="cantidad">Canidad</label>
+				<label htmlFor="cantidad">Cantidad</label>
 				<input
 					id="cantidad"
 					type="number"
