@@ -34,9 +34,13 @@ function App() {
 
 
 	const guardarGasto = (gasto) =>{
-		if(gasto.id){
+		if(gasto.id != ""){
 			//Actualizar
-			const gastosActualizados = gastos.map(gastoState => gastoState.id === gasto.id ? gasto : gastoState)
+			console.log(gasto)
+
+			const gastosActualizados = gastos.map(gastoState => gastoState.id === gasto.id ? gasto : gastoState)	
+
+			console.log(gastosActualizados)
 
 			setGastos(gastosActualizados);
 		}else{
