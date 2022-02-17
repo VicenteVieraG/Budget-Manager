@@ -12,10 +12,9 @@ const ListadoGastos = ({
 	return (
 		<div className="listado-gastos contenedor">
 			{
-				filtro ? (
+				(filtro && filtro!=="Seleccione") ? (
 					<>
 						<h2>{gastosFiltrados.length ? "Gastos" : "No hay Gastos Aún"}</h2>
-						{console.log(gastosFiltrados)}
 						{gastosFiltrados.map(gasto => (
 							<Gasto
 								key={gasto.id}
